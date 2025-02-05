@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="restaurantLogo.png">
+
+    <!-- font awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+   <script>
+    const htmlTag = document.querySelector('html');
+    const viewportW = window.innerWidth/128;
+    
+    const viewW = viewportW + 'px';
+
+    htmlTag.style = `font-size: ${viewW}`;
+
+    console.log(viewW);
+
+    window.addEventListener('resize', () => {
+       const viewW2 = window.innerWidth/128;
+
+       const viewW2px = viewW2 + 'px';
+
+       htmlTag.style = `font-size: ${viewW2px}`;
+    });
+ </script>
+</head>
+<body>
+<nav>
+    <a href="#"><img src="restaurantLogo.png" alt=""></a>
+
+    <ul>
+        <li><a href="#">MENU</a></li>
+        <span>┃</span>
+        <li><a href="#">BRANCHES</a></li>
+        <span>┃</span>
+        <li><a href="#">ABOUT US</a></li>
+        <span>┃</span>
+        <li><a href="#">DELIVERY</a></li>
+    </ul>
+
+    <a href="#">Book Reservation</a>
+</nav>
+
+<section class="foodSection">
+    <h2>Enjoy All That Miguel's Kitchen Has To Offer... And More!</h2>
+
+    <div class="marqueeWrapper">
+        <div style="width: fit-content;">
+            <div>
+                <div><img src="./Restaurant Pics/food1.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food10.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food2.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food3.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food7.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food4.png" alt=""></div>
+                <!-- <div><img src="./Restaurant Pics/food5.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food8.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food6.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food9.png" alt=""></div> -->
+
+                <div><img src="./Restaurant Pics/food1.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food10.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food2.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food3.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food7.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food4.png" alt=""></div>
+                <!-- <div><img src="./Restaurant Pics/food5.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food8.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food6.png" alt=""></div>
+                <div><img src="./Restaurant Pics/food9.png" alt=""></div> -->
+            </div>
+        </div>
+    </div>
+
+    <img src="./Restaurant Pics/menuBook22.png" alt="">
+</section>
+
+<section class="Welcome">
+    <div>
+        <img src="./Restaurant Pics/welcomeImg2.png" alt="">
+        <span>TO</span>
+        <span>MIGUEL'S KITCHEN!</span>
+
+        <div>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fa-solid fa-envelope"></i></a> -->
+        </div>
+    </div>
+
+    <div>
+        <img src="./Restaurant Pics/Rimg2.png" alt="">
+        <div>
+            <!-- <div>
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>112 Old Colony Ave, Massachusetts, MA 02127</span>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+<section class="menuSection">
+    <h2>View Our Menu</h2>
+
+    <ul>
+        <li><a href="#">DRINKS</a></li>
+        <li><a href="#">STARTER</a></li>
+        <li><a href="#">SIDES</a></li>
+        <li><a href="#">ENTREES</a></li>
+        <li><a href="#">DESSERT</a></li>
+        <li><a href="#">VIEW FEW MENU</a></li>
+    </ul>
+
+    <span>
+        Our menu is subject to change without notice. If you have questions about an item please contact us ahead of time. Additionally, we know mistakes can happen, & we are always happy to correct any errors made by our staff. Food that is prepared correctly may NOT be returned. This applies to everything, from spicy dishes to cocktails. If you have a sensitive palate, please let your server know.
+    </span>
+</section>
+    
+
+
+<section class="InquiriesSec">
+    <div class="inquiriesGird">
+        <div>
+            <img src="restaurantLogo.png" alt="">
+            <span>FOR</span> 
+            <span>Inquiries, Feedback, And Bookings</span>
+
+            <p>If you have any feedback, complaints, questions or want to make a reservation for a service or product, kindly reach out to us.</p>
+        </div>
+
+        <div>
+            <form action="" class="Mform">
+                <h3>CONTACT US</h3>
+                <section>
+                    <div class="rowForm">
+                        <div class="col-a"><label for="">Name</label></div>
+                        <div class="col-b"><input type="text"></div>
+                    </div>
+
+                    <div class="rowForm">
+                        <div class="col-a"><label for="">Phone</label></div>
+                        <div class="col-b"><input type="tel"></div>
+                    </div>
+
+                    <div class="rowForm">
+                        <div class="col-a"><label for="">Email</label></div>
+                        <div class="col-b"><input type="email"></div>
+                    </div>
+
+                    <div class="rowForm">
+                        <div class="col-a"><label for="">Message</label></div>
+                        <div class="col-b">
+                            <textarea name="" id="">
+
+                            </textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <button>SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <!-- first column -->
+    <div class="footerCol1">
+       <ul>
+          <li>
+             <b>Hours:</b>
+             <span>Monday - Saturday 10am – 7:30pm <br> Sunday 10:30am - 5:30pm</span>
+          </li>
+ 
+          <li>
+             <b>Phone:</b>
+             <span>+999 9999 9999 999</span>
+          </li>
+ 
+          <li>
+             <b>EMAIL:</b>
+             <span>MiguelKitchenSpot@gmail.com</span>
+          </li>
+       </ul>
+ 
+       <div>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+       </div>
+    </div>
+ 
+    <!-- second column -->
+    <ul class="footerCol2">
+       <li><a href="#">BOOK NOW</a></li>
+       <li><a href="#">MENU</a></li>
+       <li><a href="#">POLICY</a></li>
+       <li><a href="#">ORDER PRODUCTS</a></li>
+    </ul>
+ 
+    <!-- third column -->
+    <div class="footerCol3">
+       <span>Copyright © 2025 HubSpot <br> All Rights Reserved.</span>
+ 
+       <div>
+          <span>Managed By</span>
+ 
+          <a href="#">
+             <img src="turingTechLogo.png" alt="">
+          </a>
+       </div>
+    </div>
+</footer>
+</body>
+</html>
